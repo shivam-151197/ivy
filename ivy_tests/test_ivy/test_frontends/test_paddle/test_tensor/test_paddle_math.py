@@ -1,9 +1,11 @@
 # global
 
 # local
+import ivy
 import ivy_tests.test_ivy.helpers as helpers
 from ivy_tests.test_ivy.helpers import handle_frontend_test
 
+ivy.set_backend('paddle')
 
 # sin
 @handle_frontend_test(
